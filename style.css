@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: "Poppins", sans-serif;
+    max-width : 600px;
+    max-height: 500px;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #ffe0d2;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    position: relative;
+    margin-top: auto;
+     width: 100%;
+    max-width: 600px; 
+    height: 400px; 
+    background-color: rgba(255, 255, 255, 0.61);
+    border-radius: 3.3rem;
+    justify-content: center;
+    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+}
+
+.inner-box {
+    position: absolute;
+    width: calc(100% - 4.1rem);
+    height: calc(100% - 4.1rem);
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+.top-box {
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    bottom: 75%;
+    text-align: center;
+    
+}
+
+
+.forms-wrap {
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    top: 25%;
+    background-color: white;
+    border-radius: 2rem;
+    
+}
+
+form {
+    max-width: 260px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.heading h2 {
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #151111;
+    margin-top: 100px;
+    margin-left: 15%;
+
+}
+
+.heading h6 {
+    color: #4b4848;
+    font-weight: 300;
+    font-size: 0.7rem;
+    display: inline;
+}
+
+.actual-form {
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    align-items: center;
+    border-radius: 10px;
+/*     margin-top: 50px; */
+  
+}
+
+.actual-form input {
+    border: none;
+    height: 30px;
+/*     width: fit-content; */
+    
+}
+
+.actual-form div {
+    background-color: orangered;
+    padding: 20px 10px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   font-size: large;
+  
+
+
+}
+
+
+.sign-btn {
+    display: inline-block;
+    width: 75%;
+    height: 50px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    margin: 20px 10px;
+    align-items: center;
+/*     margin-bottom: 2rem; */
+    transition: 0.3s;
+/*     margin-top: 30px; */
+    box-shadow: rgb(252, 123, 76);
+    padding: 20px 10px;
+   
+}
+
+.sign-btn:hover {
+    background-color: #8371fd;
+
+
+
+
+@media only screen and (max-width: 600px){
+   .box{
+     width: 100%;
+     height: 100%;
+   }
+   .forms-wrap{
+     height: 100%
+     width: 100%
+   }
+  .sign-btn{
+    padding: 15px 5px
+  }
+}
